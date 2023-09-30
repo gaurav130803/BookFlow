@@ -9,15 +9,7 @@ body {
 }
 
 /* Hamburger */
-.hamburger-menu {
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    margin: 30px 0 20px 20px;
-    position: relative;
-    
-    
-}
+
 
 .site-name{
     font-size: 3.5rem;
@@ -49,8 +41,8 @@ body {
 .menu li{
     list-style: none;
     display: inline;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 4%;
+    margin-right:4%;
     padding-top:5rem;
     font-size: 1.4rem;
     text-align: center;
