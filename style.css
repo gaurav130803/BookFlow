@@ -228,15 +228,18 @@ body {
 }
 
 .more button{
-    background-color: #fc9e20;
-    color: white;
+  background-color: rgb(76, 148, 172);
+    color: rgb(6, 6, 6);
     margin-top: 30px;
+    font-weight: 600;
     width: 130px;
-    height: 30px;
+    height: 40px;
     border-radius: 5rem;
     font-size: 15px;
     border: 0;
     margin-left: 15%;
+    cursor: pointer;
+    
 }
 
 
@@ -246,7 +249,7 @@ body {
     /* background-color: rgba(0, 0, 139, 0.06); */
     color:black;
     padding: 50px;
-    width: 79%;
+    width: 59%;
     margin-bottom: 3rem;
     margin: 0 auto;
   }
@@ -291,8 +294,8 @@ body {
   }
   
   button[type="submit"] {
-    background-color: rgb(10, 10, 69);
-    color: rgb(148, 148, 174);
+    background-color: rgb(76, 148, 172);
+    color: rgb(6, 6, 6);
     border: none;
     padding: 10px 30px;
     border-radius: 1rem;
