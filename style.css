@@ -59,6 +59,9 @@ body {
 .menu li a{
     text-decoration: none;
     color: white;
+    background: rgba(198, 198, 198, 0.229);
+    border-radius: 1rem;
+    padding: 0.4rem;
 }
 
 @media  (max-width:786px) {
