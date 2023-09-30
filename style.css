@@ -96,14 +96,6 @@ body {
 .dropdown:hover .dropbtn {background-color:  rgba(198, 198, 198, 0.229);}
 
 @media  (max-width:786px) {
-
-    .hamburger-menu {
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
-        margin: 20px 10 20px 10px;
-        position: relative;
-    }
     .heading{
         font-size: 2rem;
         margin-top: 1rem;
