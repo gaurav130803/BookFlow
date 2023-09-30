@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookFlow</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js"></script>
+    <script src="script2.js"></script>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+    <link href='https://fonts.googleapis.com/css?family=Convergence' rel='stylesheet'>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="navbar">
+        <ul class="menu" id="nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Favourites</a> </li>
+            <li><a href="#">Login</a></li>
+        </ul>
+      </div>
+          <div class="site-name">
+          <img src="https://www.svgrepo.com/show/532618/book-sparkles.svg">BookFlow</div>
+       
+    
+    <div id="Motivational">
+        
+        <div class="swiper" id="swip">
+            <div class="heading_content">
+                <div class="heading">Motivational</div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="img"><img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982137137/the-7-habits-of-highly-effective-people-9781982137137_lg.jpg"></div>
+                <div class="details">
+                    <div class="name">7 Habits of Successful People</div>
+                        <div class="author"><i>Stephen R. Covey</i></div>
+                        <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://www.ajayonlinestall.com/wp-content/uploads/2021/02/9781847941831.png"></div>
+                <div class="details"><div class="name">Atomic Habits</div>
+                <div class="author"><i> james clear</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://www.ajayonlinestall.com/wp-content/uploads/2021/02/9781786330895.png"></div>
+                <div class="details"><div class="name">Ikigai</div>
+                <div class="author"><i> Héctor García</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://target.scene7.com/is/image/Target/GUEST_bb199a8b-7b78-419b-97b1-603fa15a66a4?wid=488&hei=488&fmt=pjpeg"></div>
+                <div class="details"><div class="name">Think and Grow Rich</div>
+                <div class="author"><i> Napoleon Hill</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://m.media-amazon.com/images/I/81BE7eeKzAL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="details"><div class="name">Rich Dad Poor Dad</div>
+                <div class="author"><i>Robert Kiyosaki</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://m.media-amazon.com/images/I/71GBwRkvchL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="details"><div class="name">Think Like a Monk </div>
+                <div class="author"><i>Jay Shetty</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1575289232i/49057616.jpg"></div>
+                <div class="details"><div class="name">The Rudest Book Ever</div>
+                <div class="author"><i>Shwetabh Gangwar</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://bookbins.in/wp-content/uploads/2022/11/Good-Vibes-Good-Life-Vex-King-Buy-Online-Bookbins-1.png"></div>
+                <div class="details"><div class="name">Good Vibes Good Life </div>
+                <div class="author"><i>Vex King</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://bookbins.in/wp-content/uploads/2021/05/The-Psychology-Of-Money-Morgan-Housel-Buy-Online-Bookbins-1.png"></div>
+                <div class="details"><div class="name">Psychology of Money</div>
+                <div class="author"><i>Morgan Housel</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="img"><img src="https://m.media-amazon.com/images/I/613+WUG7CGL._AC_UF1000,1000_QL80_.jpg"></div>
+                <div class="details"><div class="name">Can't Hurt Me</div>
+                <div class="author"><i>David Goggins</i></div>
+                <div class="read" onclick="completed()">Read</div>
+                </div>
+              </div>
+              
+            
+            </div>           
+        </div>
+   </div>
+
+
+   <div id="Romantic">
+        
+    <div class="swiper">
+        <div class="heading_content">
+            <div class="heading">Romantic</div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="img"><img src="https://m.media-amazon.com/images/I/71Jk3baRdnL._AC_UF1000,1000_QL80_.jpg"></div>
+            <div class="details">
+                <div class="name">The Godfather</div>
+                    <div class="author"><i>Mario Puzo</i></div>
+                    <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://flxt.tmsimg.com/NowShowing/136886/136886_ab.jpg"></div>
+            <div class="details"><div class="name">Fifty Shades of Grey</div>
+            <div class="author"><i>E. L. James</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://images-eu.ssl-images-amazon.com/images/I/71Chcpw13lL._AC_UL210_SR210,210_.jpg"></div>
+            <div class="details"><div class="name">It Ends with Us</div>
+            <div class="author"><i>Colleen Hoover</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://m.media-amazon.com/images/I/917YYJiTQ5L._AC_UF1000,1000_QL80_.jpg"></div>
+            <div class="details"><div class="name">Fifty Shades of Darker</div>
+            <div class="author"><i>E. L. James</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://images-cdn.ubuy.co.in/636ae06f2f0a527a481aa073-they-both-die-at-the-end-turtleback.jpg"></div>
+            <div class="details"><div class="name">They Both Die at the End</div>
+            <div class="author"><i>Adam Silvera</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://m.media-amazon.com/images/I/81x8fk0sRLL._AC_UF1000,1000_QL80_.jpg"></div>
+            <div class="details"><div class="name">Fifty Shades Freed</div>
+            <div class="author"><i>E. L. James</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://m.media-amazon.com/images/I/61QX1kV+MEL._AC_UF1000,1000_QL80_.jpg"></div>
+            <div class="details"><div class="name">The Midnight Library</div>
+            <div class="author"><i>Matt Haig</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://m.media-amazon.com/images/I/719CLtj6ndL._AC_UF1000,1000_QL80_.jpg"></div>
+            <div class="details"><div class="name">Love and Other Words</div>
+            <div class="author"><i>Christina Lauren</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://m.media-amazon.com/images/I/61H3BvN-naL._AC_UF1000,1000_QL80_.jpg"></div>
+            <div class="details"><div class="name">Pride and Prejudice</div>
+            <div class="author"><i>Jane Austen</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="img"><img src="https://m.media-amazon.com/images/I/61bamF-hgbL._AC_UF1000,1000_QL80_.jpg"></div>
+            <div class="details"><div class="name">Call Me by Your Name</div>
+            <div class="author"><i>André Aciman</i></div>
+            <div class="read" onclick="completed()">Read</div>
+            </div>
+          </div>
+          
+        
+        </div>           
+    </div>
+</div>
+
+
+<div id="Horror">
+        
+  <div class="swiper">
+      <div class="heading_content">
+          <div class="heading">Horror</div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="img"><img src="https://rukminim2.flixcart.com/image/850/1000/jvpk87k0/book/1/0/6/carrie-original-imae6e9bgxpmhuqf.jpeg?q=90"></div>
+          <div class="details">
+              <div class="name">Carrie</div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/71V8hxCv-iL._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">Cell</div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/81StVCjiw7L._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">Under the Dome</div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/91PccdgkToL._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">It</div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/71DN8j8ALkL._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">Black House </div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/71hrtCifr+L._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">Invisible Fiends</div>
+                  <div class="author"><i> Barry Hutchison</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Misery_%281987%29_front_cover%2C_first_edition.jpg"></div>
+          <div class="details">
+              <div class="name">Misery</div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/81jOI26444L._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">The Green Mile</div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/41M5nekhDNL.jpg"></div>
+          <div class="details">
+              <div class="name">The Stand</div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Desperationbook.jpg/200px-Desperationbook.jpg"></div>
+          <div class="details">
+              <div class="name">Desperation</div>
+                  <div class="author"><i>Stephen King</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        
+      
+      </div>           
+  </div>
+</div>
+
+<div id="Adventure">
+        
+  <div class="swiper">
+      <div class="heading_content">
+          <div class="heading">Adventure</div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+      </div>
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/91vudVbPetL._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">The Water Outlaws</div>
+                  <div class="author"><i>S.L. Huang</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/61Xh-WJxPdL._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">Deadly Depths</div>
+                  <div class="author"><i>John F. Dobbyn</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQu_1f7nbm5mlDGFkl2TfAoqGQZW7uP8hM6QLdsTYGTemJtXFV3"></div>
+          <div class="details">
+              <div class="name">The Sentinel</div>
+                  <div class="author"><i> Lee Child</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/610VwDI1+PL._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">Into Thin Air</div>
+                  <div class="author"><i>Jon Krakauer</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/811k9HNhaiL._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">nto the Wild</div>
+                  <div class="author"><i>Jon Krakauer</i></div>
+              <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://5.imimg.com/data5/SELLER/Default/2022/12/FV/DP/TI/119096088/white-fang-by-jack-london.jpg"></div>
+          <div class="details">
+              <div class="name">White Fang</div>
+                  <div class="author"><i>Jack London</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/71IJ1HC2a3L._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">The Road</div>
+                  <div class="author"><i>Cormac McCarthy</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/51CJ2AgUzYL.jpg"></div>
+          <div class="details">
+              <div class="name">The Cruel Sea</div>
+                  <div class="author"><i>Nicholas Monsarrat</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://m.media-amazon.com/images/I/71QdCubaXVL._AC_UF1000,1000_QL80_.jpg"></div>
+          <div class="details">
+              <div class="name">The Right Stuff</div>
+                  <div class="author"><i>Tom Wolfe</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="img"><img src="https://cdn.kobo.com/book-images/34c5bfd3-a8d0-4500-a321-a1533c3af3f7/1200/1200/False/moby-dick-118.jpg"></div>
+          <div class="details">
+              <div class="name">Moby-Dick</div>
+                  <div class="author"><i>Herman Melville</i></div>
+                  <div class="read" onclick="completed()">Read</div>
+          </div>
+        </div>
+        
+      
+      </div>           
+  </div>
+</div>
+
+  <div id="aboutus">
+    <div class="aboutus">
+      <div class="about-content">
+        <div class="about-heading">About Us</div>
+        <div class="about-content2">Welcome to BookFlow, your literary haven in the digital age! At BookFlow, we're passionate about connecting readers and books in meaningful ways. Our mission is simple yet profound: to inspire, inform, and empower book enthusiasts from all walks of life to discover, share, and celebrate the magic of literature.</div>
+        <div class="more">
+          <button >READ MORE</button>
+       </div>
+      </div>
+      <div class="about-img"><img src="https://images.hindustantimes.com/rf/image_size_640x362/HT/p1/2014/11/29/Incoming/Pictures/1291497_Wallpaper2.jpg" ></div>
+    </div>
+  </div>
+
+
+
+  <!-- about us end -->
+
+  <!-- contact us start -->
+
+  <section class="contact-section" id="contactus">
+    <h2 data-aos="fade-up">Get in touch</h2>
+    <form action="https://formspree.io/f/xzblkebe" method="POST" id="contact-form">
+      <label for="name"  data-aos="fade-up">Your Name</label>
+      <input type="text" id="name" name="name" required  data-aos="fade-up">
+      <label for="email"  data-aos="fade-up">Your Email</label>
+      <input type="email" id="email" name="_replyto" required  data-aos="fade-up">
+      <label for="message"  data-aos="fade-up">Your Message</label>
+      <textarea id="message" name="message" required  data-aos="fade-up"></textarea>
+      <button type="submit" id="email-send"  data-aos="zoom-in">Send</button>
+    </form>
+  </section>
+
+  <!-- contact us end -->
+</div>
+    
+</body>
+</html>

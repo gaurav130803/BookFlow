@@ -1,0 +1,308 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgba(246, 241, 241, 0.89);
+    font-family: 'Convergence';
+}
+
+/* Hamburger */
+.hamburger-menu {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin: 30px 0 20px 20px;
+    position: relative;
+    
+    
+}
+
+.site-name{
+    font-size: 3.5rem;
+    display: flex;
+    margin-top: 1rem ;
+    margin-left: 35%;
+}
+.site-name img{
+    width: 4rem;
+    height: 4rem;
+    
+}
+
+.heading{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin:1rem auto;
+}
+.navbar{
+    
+    width: 100%;
+    background-color: black;
+    
+    
+    height:3rem;
+    text-align: center;
+}
+
+.menu li{
+    list-style: none;
+    display: inline;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top:5rem;
+    font-size: 1.4rem;
+    text-align: center;
+    
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+}
+
+@media  (max-width:786px) {
+
+    .hamburger-menu {
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        margin: 20px 10 20px 10px;
+        position: relative;
+    }
+    .heading{
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin:1rem auto;
+    }
+    .change{
+        width: 100%;
+    }
+    .contact-section {
+        padding: 0;
+        padding-bottom: 50px;
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    h3 {
+        display: block;
+        font-size: .8rem;
+        
+        font-weight: bold;
+    }
+    
+}
+
+/* swiper motivation */
+
+.swiper {
+    
+    width: 79%;
+    height: 80%;
+    
+   
+  }
+
+  .swiper-slide{
+    background: rgba(213, 211, 211, 0.459);
+    width: 300px;
+    height: 600px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 1rem;
+   
+   
+  }
+  .swiper-slide .img{
+    margin: 0.5rem auto;
+    width: 90%;
+    /* border: 1px solid black; */
+    height: 350px;
+    
+
+  }
+
+  .swiper-slide .img img{
+    height: 100%;
+    border-radius: 0.7rem;
+    width: 100%;
+  }
+  .swiper-slide .details{
+    height: 150px;
+  
+    margin-top:10% ;
+  }
+  .swiper-slide .details .name{
+    height: 70px;
+    padding: auto ;
+  }
+  .swiper-slide .details .author{
+    height:30px ;
+  }
+  
+
+  .heading_content{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin:1rem auto;
+    align-items: center;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.swiper-slide .name{
+    color: black;
+    font-size: 1.8rem;
+    font-weight: 500;
+   
+}
+
+.swiper-slide .author{
+    color: black;
+    font-size: 1.1rem;
+  
+  
+
+}
+.swiper-slide .read{
+    
+    background-color: rgb(76, 148, 172);
+    height: 25%;
+    width: 80%;
+   margin:auto;
+    align-items: center;
+   padding-top: 0.4rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+/* ABOUT US */
+
+.aboutus{
+    width: 79%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    margin: 5% auto;
+    
+}
+
+.about-heading{
+    font-size: 5rem;
+    justify-content: center;
+    padding-left: 15%;
+    margin-bottom: 5%;
+    
+}
+.about-content{
+    width: 60%;
+    
+}
+
+.about-content2{
+    font-size:1.3rem ;
+    justify-content: center;
+    padding-left: 15%;
+    padding-right:15%;
+    margin-top: 10%;
+    
+} 
+.about-img
+{
+    width: 50%;
+    height: 500px;
+   
+}
+.about-img img{
+    width: 90%;
+    height: 90%;
+    padding: 5%;
+}
+
+.more button{
+    background-color: #fc9e20;
+    color: white;
+    margin-top: 30px;
+    width: 130px;
+    height: 30px;
+    border-radius: 5rem;
+    font-size: 15px;
+    border: 0;
+    margin-left: 15%;
+}
+
+
+/*CONTACT US */
+
+.contact-section {
+    /* background-color: rgba(0, 0, 139, 0.06); */
+    color:black;
+    padding: 50px;
+    width: 79%;
+    margin-bottom: 3rem;
+    margin: 0 auto;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+  }
+  
+  form {
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+    border: none;
+    background: #d1d1d1;
+    color: black;
+    resize: none;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button[type="submit"] {
+    background-color: rgb(10, 10, 69);
+    color: rgb(148, 148, 174);
+    border: none;
+    padding: 10px 30px;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  .send-mail{
+      display: flex;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #eee;
+    animation: rotateHue 2s alternate infinite;
+  }
+
+  
