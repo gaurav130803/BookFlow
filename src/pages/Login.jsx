@@ -41,7 +41,7 @@ const Login = () => {
     const responseGoogle = async (authResult) => {
         try {
             if (authResult.code) {
-                const res = await axios.post(`http://localhost:5000/api/auth/google?code=${authResult.code}`);
+                const res = await axios.post(`https://bookflow-backend.onrender.com/api/auth/google?code=${authResult.code}`);
                 const { token, user } = res.data;
 
                 localStorage.setItem("accessToken", token);

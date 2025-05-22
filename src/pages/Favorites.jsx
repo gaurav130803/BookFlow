@@ -68,7 +68,7 @@ const Favorites = () => {
               >
                 <Link to={`/book/${book._id}`}>
                   <img
-                    src={`http://localhost:5000/uploads/${book.coverImage}`}
+                    src={`https://bookflow-backend.onrender.com/uploads/${book.coverImage}`}
                     alt={book.name}
                     className="w-full h-64 object-contain bg-gray-100"
                   />

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 
 const Practice = async() => {
   try {
-    const response=await axios.get("http://localhost:5000/api/auth/getuser");
+    const response=await axios.get("https://bookflow-backend.onrender.com/api/auth/getuser");
     console.log(response);
   } catch (error) {
     

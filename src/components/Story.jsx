@@ -36,7 +36,7 @@ const Story = () => {
   const onFinish = async (values) => {
     try {
       const token = localStorage.getItem("accessToken"); // Use accessToken here
-      const res = await axios.post("http://localhost:5000/api/story/add", values, {
+      const res = await axios.post("https://bookflow-backend.onrender.com/api/story/add", values, {
         headers: {
           Authorization: `Bearer ${token}`, // Send token for backend verification
         },

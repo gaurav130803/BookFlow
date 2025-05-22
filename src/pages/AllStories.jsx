@@ -16,7 +16,7 @@ const AllStories = () => {
 
   const fetchStories = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/story/getstories");
+      const res = await axios.get("https://bookflow-backend.onrender.com/api/story/getstories");
       if (res.data.success) {
         setStories(res.data.stories);
       }
@@ -28,7 +28,7 @@ const AllStories = () => {
   const handleLike = async (id) => {
     try {
         const token = localStorage.getItem("accessToken");
-        const res = await axios.put(`http://localhost:5000/api/story/like/${id}`, null, {
+        const res = await axios.put(`https://bookflow-backend.onrender.com/api/story/like/${id}`, null, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

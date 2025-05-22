@@ -61,7 +61,7 @@ const BookDetails = () => {
         <h1 className="text-4xl font-bold text-center mb-6">{book.name}</h1>
         <div className="bg-white shadow-lg rounded-lg p-6">
           <img
-            src={`http://localhost:5000/uploads/${book.coverImage}`}
+            src={`https://bookflow-backend.onrender.com/uploads/${book.coverImage}`}
             alt={book.name}
             className="w-full max-h-[500px] object-contain mx-auto mb-6 bg-gray-100 rounded"
           />

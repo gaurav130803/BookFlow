@@ -37,7 +37,7 @@ function Navbar() {
 
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/book/search?query=${value}`
+        `https://bookflow-backend.onrender.com/api/book/search?query=${value}`
       );
       if (res.data.success && res.data.books.length > 0) {
         const options = res.data.books.map((book) => ({

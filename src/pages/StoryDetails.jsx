@@ -11,7 +11,7 @@ const StoryPage = () => {
   useEffect(() => {
     const fetchStory = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/story/${id}`);
+        const res = await axios.get(`https://bookflow-backend.onrender.com/api/story/${id}`);
         if (res.data.success) {
           setStory(res.data.story);
         }

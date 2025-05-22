@@ -9,7 +9,7 @@ const Contact = () => {
     const onFinish = async(values) => {
         console.log('Success:', values);
         try {
-            const response= await axios.post("http://localhost:5000/api/auth/contact",values);
+            const response= await axios.post("https://bookflow-backend.onrender.com/api/auth/contact",values);
             console.log(response.data.message);
             if(response.data.success)
             toast.success(response.data.message);

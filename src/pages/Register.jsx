@@ -14,7 +14,7 @@ const Register = () => {
         console.log('Success:', values);
 
         try {
-            const response = await axios.post("http://localhost:5000/api/auth/register", values);
+            const response = await axios.post("https://bookflow-backend.onrender.com/api/auth/register", values);
             if (response.data.success) {
                 toast.success(response.data.message);
                 setTimeout(() => Navigate("/"), 2000);
@@ -34,7 +34,7 @@ const Register = () => {
     const responseGoogle = async (authResult) => {
         try {
           if (authResult.code) {
-            const res = await axios.post(`http://localhost:5000/api/auth/google?code=${authResult.code}`);
+            const res = await axios.post(`https://bookflow-backend.onrender.com/api/auth/google?code=${authResult.code}`);
             const { token, user } = res.data;
       
             localStorage.setItem("accessToken", token);
