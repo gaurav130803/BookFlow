@@ -6,11 +6,10 @@ const { Meta } = Card;
 import Navbar from './Navbar';
 import Footer from './Footer';
 
-import Adventure from '../images/adventure.png';
+import Adventure from '../images/Adventure.png';
 import Romance from '../images/romance.avif';
 import Selfhelp from '../images/selfhelp.webp';
 import Horror from '../images/horror.webp';
-import History from '../images/history.jpeg';
 import Nonfiction from '../images/Non-Fiction.jpg';
 import Scifi from '../images/Sci-Fi.png';
 import Thriller from '../images/Thrillers.jpg';
