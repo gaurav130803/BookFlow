@@ -18,53 +18,44 @@ import slider9 from '../images/slider9.jpg';
 import slider10 from '../images/slider10.jpg';
 
 function Slider() {
-    return (
-        
-      <div className=' ml-[10%] mr-[6%]'>
-        <Swiper
-          modules={[Navigation, Pagination, Scrollbar, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={4}  // Show 4 slides per view
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          loop={true}
-          className='flex mt-10'
-        >
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider1} alt="Slide 1" className="w-50 h-80  rounded-lg" />
+  return (
+    <div className='ml-[10%] mr-[6%]'>
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
+        spaceBetween={20}
+        loop={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          480: {
+            slidesPerView: 3,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+        }}
+        className='flex mt-10'
+      >
+        {[slider1, slider2, slider3, slider4, slider5, slider6, slider7, slider8, slider9, slider10].map((img, index) => (
+          <SwiperSlide key={index} className='flex justify-center'>
+            <img
+              src={img}
+              alt={`Slide ${index + 1}`}
+              className="w-40 h-56 sm:w-44 sm:h-64 md:w-50 md:h-80 rounded-lg object-cover"
+            />
           </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider2} alt="Slide 2" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider3} alt="Slide 3" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider4} alt="Slide 4" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider5} alt="Slide 5" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider6} alt="Slide 6" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider7} alt="Slide 7" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider8} alt="Slide 8" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider9} alt="Slide 9" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-          <SwiperSlide className='flex justify-center'>
-            <img src={slider10} alt="Slide 10" className="w-50 h-80 rounded-lg" />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-    );
+        ))}
+      </Swiper>
+    </div>
+  );
 }
 
 export default Slider;

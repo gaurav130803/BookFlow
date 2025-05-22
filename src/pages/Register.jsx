@@ -33,22 +33,22 @@ const Register = () => {
 
     const responseGoogle = async (authResult) => {
         try {
-          if (authResult.code) {
-            const res = await axios.post(`https://bookflow-backend.onrender.com/api/auth/google?code=${authResult.code}`);
-            const { token, user } = res.data;
-      
-            localStorage.setItem("accessToken", token);
-            localStorage.setItem("username",res.data.username);
-            localStorage.setItem("user-info", JSON.stringify(user));
-            Navigate("/");
-          } else {
-            throw new Error("Google authentication failed");
-          }
+            if (authResult.code) {
+                const res = await axios.post(`https://bookflow-backend.onrender.com/api/auth/google?code=${authResult.code}`);
+                const { token, user } = res.data;
+
+                localStorage.setItem("accessToken", token);
+                localStorage.setItem("username", res.data.username);
+                localStorage.setItem("user-info", JSON.stringify(user));
+                Navigate("/");
+            } else {
+                throw new Error("Google authentication failed");
+            }
         } catch (e) {
-          console.log("Error while Google Login...", e);
-          toast.error("Google login failed");
+            console.log("Error while Google Login...", e);
+            toast.error("Google login failed");
         }
-      };
+    };
 
     const googleLogin = useGoogleLogin({
         onSuccess: responseGoogle,
@@ -101,14 +101,13 @@ const Register = () => {
 
                         {/* Submit Button */}
                         <Form.Item wrapperCol={{ span: 24 }}>
-                            <Button type="primary" htmlType="submit" className="w-92 ml-5 py-3">
+                            <Button type="primary" htmlType="submit" className="w-full py-3">
                                 Submit
                             </Button>
                         </Form.Item>
 
-                        {/* Already have an account? */}
-                        <Form.Item className="text-center ">
-                            <p className="text-gray-600 ml-20">
+                        <Form.Item className="text-center">
+                            <p className="text-gray-600">
                                 Already have an account?
                                 <NavLink to="/login" className="text-blue-500 hover:underline ml-2">
                                     Login

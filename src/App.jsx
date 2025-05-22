@@ -10,22 +10,28 @@ import Footer from './components/Footer';
 import Story from './components/Story';
 
 function App() {
-  
+
   return (
-    
-      <div className='bg-[rgba(236,225,225,0.89)] min-h-screen pt-1'> 
-        <Navbar/>
-        <div className="flex  justify-center gap-2 mt-5">
-  <img src={logo} className="w-20 h-18 mt-2" alt="BookFlow Logo" />
-  <span className="text-7xl ">BookFlow</span>
+
+    <div className='bg-[rgba(236,225,225,0.89)] min-h-screen pt-1'>
+      <Navbar />
+     <div className="flex justify-center items-center gap-2 mt-5">
+  <img
+    src={logo}
+    className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mt-2"
+    alt="BookFlow Logo"
+  />
+  <span className="text-3xl sm:text-5xl md:text-7xl">BookFlow</span>
 </div>
-        <Slider/>
-        <Genre/>
-        <Story/>
-        <Aboutus/>
-        <Footer/>
-      </div>
-    
+
+
+      <Slider />
+      <Genre />
+      <Story />
+      <Aboutus />
+      <Footer />
+    </div>
+
   )
 }
 

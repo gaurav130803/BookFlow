@@ -99,20 +99,18 @@ const Login = () => {
 
                         {/* Submit Button */}
                         <Form.Item wrapperCol={{ span: 24 }}>
-                            <Button type="primary" htmlType="submit" className="w-92 ml-5 py-3">
+                            <Button type="primary" htmlType="submit" className="w-full py-3">
                                 Submit
                             </Button>
                         </Form.Item>
 
-                        {/* Not Registered? */}
                         <Form.Item className="text-center">
-                            <p className="text-gray-600 ml-20">
+                            <p className="text-gray-600">
                                 Not registered?
                                 <NavLink to="/register" className="text-blue-500 hover:underline ml-2">
                                     Sign Up
                                 </NavLink>
                             </p>
-
                         </Form.Item>
                         <button
                             onClick={googleLogin}
