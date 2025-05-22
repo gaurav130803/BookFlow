@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Adventure from '../images/Adventure.png';
 import Romance from '../images/romance.avif';
 import Selfhelp from '../images/selfhelp.webp';
-import Horror from '../images/horror.webp';
+import Horror from '../images/Horror.webp';
 import Nonfiction from '../images/Non-Fiction.jpg';
 import Scifi from '../images/Sci-Fi.png';
 import Thriller from '../images/Thrillers.jpg';
