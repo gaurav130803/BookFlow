@@ -2,9 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router";
 import App from "./App.jsx";
-import Login from "./pages/login.jsx";
-import Register from "./pages/register.jsx";
-import Practice from "./pages/Practice.jsx";
+import Login from "./pages/Login.jsx";
+import Register from "./pages/Register.jsx";
 import Genre from "./components/Catogory.jsx"
 import Contact from "./pages/Contact.jsx";
 import BooksByGenre from "./pages/BookByGenre.jsx";
@@ -22,7 +21,6 @@ ReactDOM.createRoot(root).render(
       <Route path="/" element={<App />} />
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Register />} />
-      <Route path="/practice" element={<Practice />} />
       <Route path="/genre" element={<Genre />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/genre/:genreName" element={<BooksByGenre />} />
