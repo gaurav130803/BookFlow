@@ -18,10 +18,10 @@ function App() {
      <div className="flex justify-center items-center gap-2 mt-5">
   <img
     src={logo}
-    className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mt-2"
+    className="w-12 h-12 sm:w-20 sm:h-20 md:w-20 md:h-20 mt-2"
     alt="BookFlow Logo"
   />
-  <span className="text-3xl sm:text-5xl md:text-7xl">BookFlow</span>
+  <span className="text-3xl sm:text-7xl md:text-7xl">BookFlow</span>
 </div>
 
 
