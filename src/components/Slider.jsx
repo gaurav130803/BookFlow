@@ -30,7 +30,7 @@ function Slider() {
         }}
         breakpoints={{
           0: {
-            slidesPerView: 1,
+            slidesPerView: 2,
           },
           480: {
             slidesPerView: 3,
