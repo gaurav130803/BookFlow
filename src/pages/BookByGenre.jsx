@@ -100,7 +100,7 @@ const BooksByGenre = () => {
 
           </div>
         ) : (
-          <p className="text-center text-gray-500">No books found for this genre.</p>
+          <p className="text-center text-gray-500">Books are loading please wait.</p>
         )}
       </div>
       <ToastContainer />
